@@ -548,7 +548,7 @@ body {
     background-size: 20px;
 }
 .social-link-dribbble {
-    background-image: url("svg/001-dribbble.svg");
+    background-image: url(svg/001-dribbble.svg);
 }
 .social-link-pinterest {
     background-image: url(svg/001-pinterest.svg);
