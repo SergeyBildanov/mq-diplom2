@@ -284,13 +284,12 @@ body {
 }
 .resent-post {
     display: flex;
-    justify-content: space-between;
 }
 .resent-post:nth-child(n + 2) {
     margin-top: 20px;
 }
 .post-img {
-    margin-right: 25px;
+    margin-right: 20px;
     width: 70px;
     height: 70px;
 }
@@ -738,6 +737,23 @@ body {
     }
     .page-aside{
         width:100%;
+    }
+    .resent-post{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .post-info{
+        flex-grow: 1;
+        text-align: left;
+    }
+    .post-h-text{
+        width: 100%;
+    }
+    .search-input{
+        flex-grow: 1;
+    }
+    .search-field{
+        width: 100%;
     }
     .handwork-card{
         width: 100%;
