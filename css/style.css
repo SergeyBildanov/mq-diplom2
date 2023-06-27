@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 @font-face {
     font-family: "OpenSans";
@@ -37,6 +39,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     z-index: 0;
+    box-sizing: border-box;
 }
 
 .container {
@@ -286,9 +289,9 @@ body {
     height: 3px;
     background-color: #e1d9bd;
 }
-.h3-text {
+.h2-text {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
 }
@@ -317,7 +320,7 @@ body {
     text-align: left;
     width: 185px;
 }
-.h4-text{
+.h3-text{
     font-weight: bold;
     font-size: 14px;
     text-transform: uppercase;
@@ -440,6 +443,7 @@ body {
     margin-top: 10px;
 }
 .handwork-cards{
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -447,8 +451,7 @@ body {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 30px;
-    padding-bottom: 65px;
+    padding: 30px 15px 65px;
 }
 .handwork-card{
     display: flex;
@@ -529,11 +532,14 @@ body {
     cursor: pointer;
 }
 .footer {
+    box-sizing: border-box;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .socials {
     display: flex;
@@ -586,6 +592,7 @@ body {
     font-size: 12px;
 }
 .popup-container{
+    box-sizing: border-box;
     position: fixed;
     content:"";
     top: 0;
@@ -604,10 +611,15 @@ body {
     flex-direction: column;
 }
 .popup-close{
+    content: "";
     width: 16px;
+    height: 16px;
+    background-image: url("svg/form-x.svg");
+    background-size: 16px;
     align-self: end;
 }
 .popup{
+    box-sizing: border-box;
     background-color: white;
     width: 390px;
     font-family:OpenSans;
@@ -620,6 +632,7 @@ body {
     margin-bottom: 25px;
 }
 .select-list{
+    box-sizing: border-box;
     font-size: 13px;
     width:100%;
     height: 50px;
@@ -664,6 +677,7 @@ body {
     background-image:url("svg/form-circle.svg");
 }
 .feedback-field{
+    box-sizing: border-box;
     font-size:13px;
     max-width: 330px;
     min-width: 330px;
@@ -681,19 +695,41 @@ body {
     outline-color: #b59f5b;
 }
 @media (max-width: 1200px){
-    .container{
+    .header{
         padding: 0 5%;
     }
-    .menu{
+    .container{
+        box-sizing: border-box;
+    }
+    .menu-list{
         position: absolute;
         width: 1px;
         height: 1px;
         clip: rect(1px, 1px, 1px, 1px);
+        margin: 0;
+        display: none;
+        visibility: hidden;
+    }
+    .menu-list-item{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        clip: rect(1px, 1px, 1px, 1px);
+        display: none;
+        visibility: hidden;
+    }
+    .menu-link{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        clip: rect(1px, 1px, 1px, 1px);
+        display: none;
+        visibility: hidden;
     }
     .menu-icon{
         display: inline-block;
-        width: 64px;
-        height: 64px;
+        width: 32px;
+        height: 32px;
         fill: white;
         margin-left: auto;
     }
@@ -702,13 +738,14 @@ body {
     }
     .page{
         padding: 50px 35px;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
+        justify-content: space-between;
     }
     .main{
         box-sizing: border-box;
-        margin-right: 40px;
+        flex-grow: 1;
+    }
+    .page-aside{
+        margin-left: 40px;
     }
     .main-news{
         display: flex;
@@ -719,6 +756,7 @@ body {
         margin-bottom: 20px;
     }
     .handwork-cards{
+        box-sizing: border-box;
         width: 100%;
         padding: 0 30px 50px;
     }
@@ -726,6 +764,7 @@ body {
         width: calc(50% - 13px);
     }
     .footer{
+        box-sizing: border-box;
         width: 100%;
         padding: 0 30px;
     }
@@ -742,17 +781,41 @@ body {
     }
 }
 @media (max-width: 768px){
+    .header{
+        width: 100%;
+        box-sizing: border-box;
+    }
     .container{
+        width: calc(100% - 5px);
+        position: relative;
         flex-direction: column-reverse;
+        box-sizing: border-box;
+    }
+    .logo-link{
+        position: relative;
     }
     .header-logo{
-        width: calc(100% - 16%);
+        position: relative;
+        margin: 0 auto;
+        margin-top: 185px;
+        width: 50%;
+        height: 60px;
         align-self: center;
     }
+    .menu{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        clip: rect(1px, 1px, 1px, 1px);
+        display: none;
+    }
     .h1-text{
-        width: calc(100% - 16%);
+        width: 80%;
+        box-sizing: border-box;
+        position: relative;
     }
     .h1-title{
+        position: relative;
         font-size: 26px;
         line-height: 36px;
     }
@@ -760,19 +823,37 @@ body {
         margin-top: 0;
     }
     .page{
+        position: relative;
+        width: calc(100% - 30px);
+        box-sizing: border-box;
         flex-direction: column;
         padding: 0 15px;
     }
     .main{
-        width:100%;
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
         margin-bottom: 45px;
     }
     .page-aside{
+        position: relative;
         width:100%;
+        margin: 0;
+    }
+    .resent-posts{
+        position: relative;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
     }
     .resent-post{
-        width: 100%;
         margin: 0 auto;
+    }
+    .news-image{
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        margin: 0;
     }
     .post-info{
         flex-grow: 1;
@@ -780,26 +861,95 @@ body {
     }
     .post-h-text{
         width: 100%;
+        position: relative;
     }
     .search-input{
         flex-grow: 1;
     }
     .search-field{
         width: 100%;
+        box-sizing: border-box;
+        position: relative;
     }
     .handwork-card{
         width: 100%;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .popup-container{
+        width: 100%;
+        height: 100%;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        justify-content: start;
+        align-items: start;
+        margin: auto;
+    }
+    .popup-body{
+        position: relative;
+        width: 100%;
+        min-height: calc(60% - 16px);
+        padding: 0;
+        box-sizing: border-box;
+        margin-bottom: 5%;
+    }
+    .popup-close{
+        content: "";
+        width: 16px;
+        height: 16px;
+        background-image: url("svg/form-x.svg");
+        background-size: 16px;
+        margin-top: 5%;
+    }
+    .popup{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 30px 20px;
+        font-size: 12px;
+        box-sizing: border-box;
+        flex-shrink: 1;
+    }
+    .popup-title{
+        font-weight: bold;
+        font-size: 15px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .feedback-form{
+        position: relative;
+        width: 100%;
+        min-height: 45vh;
+        padding: 0;
+        margin-top: 5%;
+        flex-shrink: 1;
+    }
+    .select-list{
+        margin-bottom: 5%;
+        height: 5vh;
+    }
+    .feedback-field{
+        position: relative;
+        min-height: 15vh;
+        max-height: 15vh;
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
     }
 }
 @media (max-width: 768px) and (orientation: landscape) {
     .trends-card{
         width: calc(50% - 1px);
         margin-top: 1px;
+        box-sizing: border-box;
     }
 }
 @media (max-width: 768px) and (orientation: portrait) {
     .trends-card{
         width: 100%;
         margin-top: 5px;
+        box-sizing: border-box;
     }
 }
