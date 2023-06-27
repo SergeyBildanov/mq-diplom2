@@ -29,7 +29,7 @@ body {
     background-image: url(images/banner-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 37% 0%;
     text-align: center;
     align-items: center;
     vertical-align: middle;
@@ -733,6 +733,9 @@ body {
         fill: white;
         margin-left: auto;
     }
+    .h1-text{
+        margin-bottom: 125px;
+    }
     .trends-cards{
         margin-bottom: 0;
     }
@@ -813,6 +816,7 @@ body {
         width: 80%;
         box-sizing: border-box;
         position: relative;
+        margin-bottom: 215px;
     }
     .h1-title{
         position: relative;
