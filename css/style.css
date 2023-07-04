@@ -19,8 +19,6 @@
 }
 body {
     font-family: OpenSans;
-    position:relative;
-    width: 100%;
     z-index: 0;
 }
 .header {
@@ -33,7 +31,7 @@ body {
     text-align: center;
     align-items: center;
     vertical-align: middle;
-    width: 100%;
+    min-width: 1200px;
     padding-top: 35px;
     padding-bottom: 135px;
     margin-left: auto;
@@ -43,6 +41,7 @@ body {
 }
 
 .container {
+    box-sizing: border-box;
     display: flex;
     position: relative;
     max-width: 1200px;
@@ -50,6 +49,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    padding: 0 15px;
 }
 .header-logo {
     width: 185px;
@@ -186,7 +186,7 @@ body {
     justify-content: space-between;
 }
 .main {
-    width: calc(70% - 150px);
+    width: 800px;
 }
 .main-news {
     display: flex;
@@ -242,8 +242,9 @@ body {
 .header-h-text {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 24px;
+    width: 370px;
 }
 .header-h-text:hover {
     color: #b59f5b;
@@ -263,14 +264,12 @@ body {
 }
 .news-text {
     margin-top: 40px;
-    width: 100%;
 }
 .news-paragraph {
     font-weight: normal;
     font-size: 13px;
     line-height: 18px;
     margin-top: 0;
-    width: 100%;
 }
 .news-paragraph:nth-child(n + 2) {
     margin-top: 15px;
@@ -291,7 +290,7 @@ body {
 }
 .h2-text {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 18px;
     text-transform: uppercase;
 }
@@ -302,11 +301,15 @@ body {
     display: flex;
 }
 .resent-post:nth-child(n + 2) {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .post-img {
     margin-right: 20px;
     width: 70px;
+    height: 70px;
+}
+.post-info{
+    width: 180px;
     height: 70px;
 }
 .post-date {
@@ -320,9 +323,20 @@ body {
     text-align: left;
     width: 185px;
 }
+.post-h-link{
+    display: flex;
+    color: black;
+    text-decoration: none;
+}
 .h3-text{
     font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.resent-post-h{
+    font-weight: bold;
     font-size: 14px;
+    line-height: 18px;
     text-transform: uppercase;
 }
 .resent-post-h:hover {
@@ -364,7 +378,7 @@ body {
     margin-bottom: 60px;
 }
 .email-field {
-    width: 100%;
+    width: 275px;
     height: 50px;
     padding-left: 15px;
     padding-right: 15px;
@@ -375,7 +389,7 @@ body {
     outline-color: #b59f5b;
 }
 .email-confirm-button {
-    width: 100%;
+    width: 275px;
     height: 50px;
     margin-top: 15px;
     color: #fff;
@@ -464,12 +478,11 @@ body {
     padding: 0 25px;
 }
 .shop-item-image{
-    width:100%;
+    width:300px;
 }
-.info-container
-{
+.info-container{
     box-sizing: border-box;
-    width:100%;
+    width:350px;
     min-height:265px;
     flex-grow: 1;
     padding: 50px 25px 70px;
@@ -542,8 +555,8 @@ body {
     padding-right: 15px;
 }
 .socials {
+    box-sizing: border-box;
     display: flex;
-    width: 100%;
     background-color: #eeeeee;
     align-items: center;
     padding-top: 30px;
@@ -696,7 +709,9 @@ body {
 }
 @media (max-width: 1200px){
     .header{
+        width: 100%;
         padding: 0 5%;
+        padding-top: 50px;
     }
     .container{
         box-sizing: border-box;
@@ -739,6 +754,9 @@ body {
     .trends-cards{
         margin-bottom: 0;
     }
+    .header-h-text{
+        width: 100%;
+    }
     .page{
         padding: 50px 35px;
         justify-content: space-between;
@@ -746,6 +764,7 @@ body {
     .main{
         box-sizing: border-box;
         flex-grow: 1;
+        width: calc(70% - 150px);
     }
     .page-aside{
         margin-left: 40px;
@@ -758,6 +777,12 @@ body {
         width: 100%;
         margin-bottom: 20px;
     }
+    .email-field{
+        width: 100%;
+    }
+    .email-confirm-button{
+        width: 100%;
+    }
     .handwork-cards{
         box-sizing: border-box;
         width: 100%;
@@ -766,10 +791,19 @@ body {
     .handwork-card{
         width: calc(50% - 13px);
     }
+    .shop-item-image{
+        width: 100%;
+    }
+    .info-container{
+        width: 100%;
+    }
     .footer{
         box-sizing: border-box;
         width: 100%;
         padding: 0 30px;
+    }
+    .socials{
+        width: 100%;
     }
 }
 @media (max-width: 1200px) and (orientation: landscape) {
@@ -783,7 +817,7 @@ body {
         margin-top: 1px;
     }
 }
-@media (max-width: 768px){
+@media (max-width: 640px){
     .header{
         width: 100%;
         box-sizing: border-box;
@@ -832,6 +866,7 @@ body {
         box-sizing: border-box;
         flex-direction: column;
         padding: 0 15px;
+        margin-top: 50px;
     }
     .main{
         position: relative;
@@ -943,14 +978,14 @@ body {
         padding: 0;
     }
 }
-@media (max-width: 768px) and (orientation: landscape) {
+@media (max-width: 640px) and (orientation: landscape) {
     .trends-card{
         width: calc(50% - 1px);
         margin-top: 1px;
         box-sizing: border-box;
     }
 }
-@media (max-width: 768px) and (orientation: portrait) {
+@media (max-width: 640px) and (orientation: portrait) {
     .trends-card{
         width: 100%;
         margin-top: 5px;
