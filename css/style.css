@@ -32,8 +32,8 @@ body {
     align-items: center;
     vertical-align: middle;
     min-width: 1200px;
-    padding-top: 35px;
-    padding-bottom: 135px;
+    padding-top: 29px;
+    padding-bottom: 140px;
     margin-left: auto;
     margin-right: auto;
     z-index: 0;
@@ -46,16 +46,17 @@ body {
     position: relative;
     max-width: 1200px;
     justify-content: space-between;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     padding: 0 15px;
 }
 .header-logo {
-    width: 185px;
+    width: 180px;
 }
 .visually-hidden {
-    display: inline-block;
+    display: none;
     width: 1px;
     height: 1px;
     position: absolute;
@@ -69,7 +70,7 @@ body {
     list-style: none;
 }
 .menu-list-item:nth-child(n+2) {
-    margin-left: 30px;
+    margin-left: 35px;
 }
 .menu-list-item:hover {
     border-bottom: 2px solid #d5d5d3;
@@ -86,15 +87,15 @@ body {
 }
 .h1-text {
     display: inline-block;
-    width: 710px;
+    width: 690px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 55px;
+    margin-top: 110px;
 }
 .h1-title {
     color: white;
     font-size: 45px;
-    line-height: 75px;
+    line-height: 63px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -110,11 +111,11 @@ body {
     z-index: -1;
 }
 .trends {
-    margin-top: 65px;
+    margin-top: 60px;
 }
 .trends-cards{
-    margin-top: 30px;
-    margin-bottom: 65px;
+    margin-top: 20px;
+    margin-bottom: 54px;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -182,7 +183,7 @@ body {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding: 50px 15px;
+    padding: 0 15px;
     justify-content: space-between;
 }
 .main {
@@ -195,13 +196,13 @@ body {
     min-height: 295px;
 }
 .main-news:nth-child(n + 2) {
-    margin-top: 55px;
+    margin-top: 60px;
 }
 .news-image {
     box-sizing: border-box;
     display: inline-block;
-    width: 360px;
-    min-height: 290px;
+    width: 380px;
+    min-height: 300px;
     margin-right: 30px;
 }
 .news{
@@ -242,9 +243,9 @@ body {
 .header-h-text {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 24px;
-    width: 370px;
+    width: 328px;
 }
 .header-h-text:hover {
     color: #b59f5b;
@@ -252,6 +253,7 @@ body {
 .section-footer {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 .post-date-text {
     font-weight: normal;
@@ -262,12 +264,9 @@ body {
     font-weight: bold;
     font-size: 12px;
 }
-.news-text {
-    margin-top: 40px;
-}
 .news-paragraph {
     font-weight: normal;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 18px;
     margin-top: 0;
 }
@@ -276,7 +275,7 @@ body {
 }
 .page-aside {
     text-align: center;
-    width: 275px;
+    width: 263px;
 }
 .resent-posts-title {
     text-align: center;
@@ -290,21 +289,21 @@ body {
 }
 .h2-text {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 18px;
     text-transform: uppercase;
 }
 .resent-posts {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 .resent-post {
     display: flex;
 }
 .resent-post:nth-child(n + 2) {
-    margin-top: 25px;
+    margin-top: 21px;
 }
 .post-img {
-    margin-right: 20px;
+    margin-right: 24px;
     width: 70px;
     height: 70px;
 }
@@ -330,7 +329,7 @@ body {
 }
 .h3-text{
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
 }
 .resent-post-h{
@@ -346,7 +345,7 @@ body {
     display: flex;
     justify-content: flex-start;
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 43px;
 }
 .search-field {
     width: 225px;
@@ -374,8 +373,8 @@ body {
     cursor: pointer;
 }
 .email-confirm {
-    margin-top: 25px;
-    margin-bottom: 60px;
+    margin-top: 15px;
+    margin-bottom: 35px;
 }
 .email-field {
     width: 275px;
@@ -407,22 +406,24 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 37px;
 }
 .teg {
+    box-sizing: border-box;
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 4px;
     margin-bottom: 10px;
 }
 .teg-name {
+    box-sizing: border-box;
     text-decoration: none;
     text-transform: uppercase;
     color: #0f0d0e;
     font-size: 12px;
     font-weight: 700;
     border: 2px solid #eeeeee;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 14px;
+    padding-right: 14px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -436,8 +437,8 @@ body {
     font-weight: bold;
     font-size: 14px;
     margin-right: 4px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 13px;
+    margin-bottom: 13px;
 }
 .theme {
     display: flex;
@@ -456,6 +457,9 @@ body {
     margin-bottom: 20px;
     margin-top: 10px;
 }
+.handwork{
+    margin-top: 35px;
+}
 .handwork-cards{
     box-sizing: border-box;
     display: flex;
@@ -468,11 +472,12 @@ body {
     padding: 30px 15px 65px;
 }
 .handwork-card{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
     width: 350px;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 .image-container{
     padding: 0 25px;
@@ -485,7 +490,7 @@ body {
     width:350px;
     min-height:265px;
     flex-grow: 1;
-    padding: 50px 25px 70px;
+    padding: 43px 25px 0;
     border: solid 3px #d3c59d;
     margin-top: -35px;
     z-index: 1;
@@ -493,9 +498,8 @@ body {
 .card-title{
     text-align: left;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 17px;
     text-transform: uppercase;
-    padding-bottom: 15px;
 }
 .card-text{
     line-height: 22px;
@@ -515,6 +519,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: end;
+    margin-bottom: 25px;
 }
 .item-costs{
     display: flex;
@@ -711,12 +716,24 @@ body {
     .header{
         position: relative;
         min-width: 100%;
-        padding: 0 5%;
-        padding-top: 50px;
+        padding: 0 4%;
+        padding-top: 5%;
     }
     .container{
         width: 100%;
         box-sizing: border-box;
+        padding: 0px;
+    }
+    .header-logo{
+        width: 164px;
+    }
+    .h1-title{
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .h1-text{
+        width: 90%;
+        margin-top: 83px;
     }
     .menu-list{
         position: absolute;
@@ -751,13 +768,28 @@ body {
         margin-left: auto;
     }
     .h1-text{
-        margin-bottom: 125px;
+        margin-bottom: 110px;
+    }
+    .trends{
+        margin-top: 47px;
+    }
+    .h2-text{
+        font-size: 18px;
     }
     .trends-cards{
         margin-bottom: 0;
+        margin-top: 10px;
+    }
+    .trends-card{
+        min-height: 245px;
+    }
+    .card-container{
+        padding: 8% 10%;
     }
     .header-h-text{
         width: 100%;
+        font-size: 17px;
+        line-height: 21px;
     }
     .page{
         padding: 50px 35px;
@@ -770,14 +802,37 @@ body {
     }
     .page-aside{
         margin-left: 40px;
+        width: 263px;
     }
     .main-news{
+        position: relative;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
+    .main-news:nth-child(n+2){
+        margin-top: 65px;
+    }
     .news-image{
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+    }
+    .section-header{
+        margin-bottom: 30px;
+    }
+    .news-paragraph{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .h-link{
+        margin-top: 4px;
+    }
+    .search{
+        margin-top: 68px;
+        margin-bottom: 53px;
+    }
+    .email-confirm{
+        margin-bottom: 57px;
     }
     .email-field{
         width: 100%;
@@ -785,13 +840,19 @@ body {
     .email-confirm-button{
         width: 100%;
     }
+    .teg-list{
+        margin-bottom: 57px;
+    }
+    .handwork{
+        margin-top: 15px;
+    }
     .handwork-cards{
         box-sizing: border-box;
         width: 100%;
-        padding: 0 30px 50px;
+        padding: 0 30px 45px;
     }
     .handwork-card{
-        width: calc(50% - 13px);
+        width: calc(50% - 9px);
     }
     .shop-item-image{
         width: 100%;
@@ -823,9 +884,11 @@ body {
     .header{
         width: 100%;
         box-sizing: border-box;
+        padding-top: 7%;
     }
     .container{
-        width: calc(100% - 5px);
+        width: calc(100%);
+        padding: 0;
         position: relative;
         flex-direction: column-reverse;
         box-sizing: border-box;
@@ -836,8 +899,8 @@ body {
     .header-logo{
         position: relative;
         margin: 0 auto;
-        margin-top: 185px;
-        width: 50%;
+        margin-top: 170px;
+        width: 100%;
         height: 60px;
         align-self: center;
     }
@@ -849,15 +912,39 @@ body {
         display: none;
     }
     .h1-text{
-        width: 80%;
+        width: 100%;
         box-sizing: border-box;
         position: relative;
-        margin-bottom: 215px;
+        margin-bottom: 210px;
+        margin-top: 30px;
     }
     .h1-title{
         position: relative;
         font-size: 26px;
         line-height: 36px;
+    }
+    .trends{
+        margin-top: 40px;
+    }
+    .trends-cards{
+        margin-top: 17px;
+    }
+    .trends-card{
+        min-height:230px;
+        max-height: 230px;
+        box-sizing: border-box;
+    }
+    .card-container{
+        padding: 6% 6% 8%;
+    }
+    .header-h-text{
+        width: 100%;
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 5px;
+    }
+    .h2-text{
+        font-size: 16px;
     }
     .trends-card:first-child{
         margin-top: 0;
@@ -867,14 +954,24 @@ body {
         width: calc(100% - 30px);
         box-sizing: border-box;
         flex-direction: column;
-        padding: 0 15px;
-        margin-top: 50px;
+        padding: 0;
+        margin-top: 45px;
     }
     .main{
         position: relative;
         width: 100%;
         box-sizing: border-box;
         margin-bottom: 45px;
+    }
+    .news-text{
+        width: 98%;
+    }
+    .main-news:nth-child(n+2){
+        margin-top: 60px;
+    }
+    .news-paragraph{
+        font-size: 14px;
+        line-height: 19px;
     }
     .page-aside{
         position: relative;
@@ -894,7 +991,25 @@ body {
         box-sizing: border-box;
         position: relative;
         width: 100%;
+        min-height: 253px;
+        max-height: 253px;
         margin: 0;
+    }
+    .h-link{
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .section-navigation{
+        margin-top: 10px;
+    }
+    .section-header{
+        margin-bottom: 15px;
+    }
+    .section-footer-author{
+        font-size:13px;
+    }
+    .post-date-text{
+        margin-right: 12px;
     }
     .post-info{
         flex-grow: 1;
@@ -904,6 +1019,21 @@ body {
         width: 100%;
         position: relative;
     }
+    .resent-posts-title{
+        margin-top: 20px;
+    }
+    .h3-text{
+        font-size: 16px;
+    }
+    .resent-posts{
+        margin-top: 15px;
+    }
+    .post-img{
+        margin-right: 20px;
+    }
+    .search{
+        margin-bottom: 35px;
+    }
     .search-input{
         flex-grow: 1;
     }
@@ -912,10 +1042,36 @@ body {
         box-sizing: border-box;
         position: relative;
     }
+    .email-confirm{
+        margin-bottom: 37px;
+    }
+    .teg-list{
+        margin-bottom: 35px;
+    }
+    .handwork{
+        margin-top: 35px;
+    }
+    .handwork-cards{
+        padding-right: 4%;
+        padding-left: 4%;
+    }
     .handwork-card{
         width: 100%;
         box-sizing: border-box;
         position: relative;
+    }
+    .info-container{
+        padding-right: 7%;
+        padding-left: 5%;
+        padding-bottom: 0;
+        min-height: 220px;
+    }
+    .card-title{
+        font-size: 17px;
+        padding: 0;
+    }
+    .card-text{
+        margin-bottom: 27px;
     }
     .popup-container{
         width: 100%;
